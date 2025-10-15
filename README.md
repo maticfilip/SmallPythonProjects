@@ -5,3 +5,4 @@ Took around 45 minutes to code after watching a tutorial available on YouTube. (
 4. Discord bot. A simple discord bot, will be further modified for real time using. This one has some small interactions with the bot, allows admin to warn users and count warnings, and automatically adds warnings for foul words resulting in a ban. 
 5.CookieCLicker. A Selenium app to interact with an online game CookieClicker. Basically an automator for that game. 
 6. Selenium interacter. A Selenium app that interacts with a gym website to schedule a class. Part of an Udemy class.
+7. Instagram bot. A simple instagram bot to farm followers from bigger accounts. Needs bulletproofing as instagram has fixed its bot detection system.
