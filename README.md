@@ -6,3 +6,6 @@ Took around 45 minutes to code after watching a tutorial available on YouTube. (
 5.CookieCLicker. A Selenium app to interact with an online game CookieClicker. Basically an automator for that game. 
 6. Selenium interacter. A Selenium app that interacts with a gym website to schedule a class. Part of an Udemy class.
 7. Instagram bot. A simple instagram bot to farm followers from bigger accounts. Needs bulletproofing as instagram has fixed its bot detection system.
+8. Tic Tac Toe. No need to further explain :)
+9. Adding watermarks. Simple image that combines Tkinter and Pillow to add watermarks to users images. Probably will work more on this one, could be useful.
+10. String to Morse.
