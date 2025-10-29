@@ -9,3 +9,4 @@ Took around 45 minutes to code after watching a tutorial available on YouTube. (
 8. Tic Tac Toe. No need to further explain :)
 9. Adding watermarks. Simple image that combines Tkinter and Pillow to add watermarks to users images. Probably will work more on this one, could be useful.
 10. String to Morse.
+11. Speed of typing. Python app to record typing speed in words per minute.
