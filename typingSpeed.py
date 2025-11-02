@@ -8,30 +8,35 @@ class TypingApp:
         self.root=root
         root.title("Speed typing text")
         root.geometry("1280x720")
+        root.config(bg="#323437")
 
-        self.r=RandomWord()
-        self.words=[self.r.word(word_min_length=3, word_max_length=8) for i in range(100)]
+        grey="#323437"
+
+        root.grid_rowconfigure(0, weight=1)
+        root.grid_columnconfigure(0, weight=1)
+        root.grid_columnconfigure(1, weight=1)
+        root.grid_columnconfigure(2, weight=1)
+        
+        self.words=[lorem.words(1) for i in range(100)]
         self.curr=0
         self.user_input=[]
         self.time_left=60
         self.start_time=None
         self.running=False
 
-        self.label_words=tk.Label(root, text=" ".join(self.words[:100]),wraplength=600)
-        self.label_words.pack(pady=10)
+        self.label_words=tk.Label(root, text=" ".join(self.words[:100]),wraplength=900, bg=grey, font=("Arial",16,"bold"))
+        self.label_words.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
 
         self.entry=tk.Entry(root, width=50)
-        self.entry.pack(pady=10)
+        self.entry.grid(row=1, column=1, pady=20)
+
         self.entry.bind("<space>", self.on_space)
 
         self.timer_label=tk.Label(root, text="Time left: 60s")
-        self.timer_label.pack()
 
         self.start_button=tk.Button(root, text="Start", command=self.start_test)
-        self.start_button.pack(pady=10)
 
         self.result_label=tk.Label(root, text="")
-        self.result_label.pack(pady=10)
 
     def on_space(self, event):
         if not self.running:
